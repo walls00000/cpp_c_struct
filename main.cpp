@@ -10,16 +10,14 @@ int main() {
 	logtype logbridge = &foo::log;
 
 	for (int i=0;i<10;i++) {
-	    // define struct params
-
 	    std::stringstream ss;
 	    ss << "Name-" << i;
 	    std::string str = ss.str();
 	    char *cstr = new char[str.length() +1];
-        strcpy(cstr, str.c_str());
+            strcpy(cstr, str.c_str());
 
-        // define struct params
-        struct params config;
+            // define struct params
+            struct params config;
 	    config.name = cstr;
 	    config.logbridge = logbridge;
 	    //Call C code with struct containing logbridge logtype function pointer.
