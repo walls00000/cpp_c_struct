@@ -5,6 +5,7 @@ The cpp_c_struct program is based on the cpp_c project, however here we define a
 * C++/C integration: C++ code calling C code
 * C++/C integration: Passing a C++ function pointer to C code 
 * typedef: used to simplify a complex construct
+* struct pointer used to pass a collection of arguments
 
 
 ## To build use g++:
